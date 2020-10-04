@@ -1,22 +1,21 @@
 import java.util.*;
 import com.ssuriyan.java.programs.AnagramCheck;
+import com.ssuriyan.java.programs.crackingthecodinginterview.UniqueCharacters;
 
 public class ScratchPad {
 
     public static void main(String[] args) {
-        
-        Scanner s = new Scanner(System.in);
-        String input1, input2;
-        System.out.print("Input string: ");
-        input1 = s.nextLine();
-        System.out.print("Input string: ");
-        input2 = s.nextLine();
 
-        boolean res = AnagramCheck.checkAnagram(input1, input2);
+        Scanner s = new Scanner(System.in);
+        String input;
+        System.out.print("Input string: ");
+        input = s.nextLine();
+
+        boolean res = UniqueCharacters.checkUniqueChars(input);
         if (res) {
-            System.out.println("\nInput strings are anagram.");
+            System.out.println("\nAll characters of input string are unique.");
         } else {
-            System.out.println("\nInput strings aren't anagram.");
+            System.out.println("\nAll characters of input string are not unique.");
         }
     }
 }
