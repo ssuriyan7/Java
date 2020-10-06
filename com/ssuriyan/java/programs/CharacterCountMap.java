@@ -4,6 +4,14 @@ import java.util.*;
 
 public class CharacterCountMap {
 
+    /**
+     * This function will return a map of character:count of the input string. i.e
+     * each key is a unique character in the string with value as the number of its
+     * occurence
+     * 
+     * @param input Input String for which the character:count map is required
+     * @return returns a HashMap of character:count of the input string
+     */
     public static Map<Character, Integer> getCharacterCountMap(String input) {
 
         Map<Character, Integer> charMap = new HashMap<>();
