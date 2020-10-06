@@ -1,6 +1,6 @@
 import java.util.*;
 import com.ssuriyan.java.programs.AnagramCheck;
-import com.ssuriyan.java.programs.crackingthecodinginterview.UniqueCharacters;
+import com.ssuriyan.java.programs.crackingthecodinginterview.*;
 
 public class ScratchPad {
 
@@ -10,12 +10,6 @@ public class ScratchPad {
         String input;
         System.out.print("Input string: ");
         input = s.nextLine();
-
-        boolean res = UniqueCharacters.checkUniqueChars(input);
-        if (res) {
-            System.out.println("\nAll characters of input string are unique.");
-        } else {
-            System.out.println("\nAll characters of input string are not unique.");
-        }
+        System.out.println(URLify.urlify(input));
     }
 }
